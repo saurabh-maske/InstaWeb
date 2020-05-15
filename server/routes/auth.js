@@ -42,10 +42,10 @@ router.post('/signup',(req,res)=>{
             .then(user=>{
                 transporter.sendMail({
                     to:user.email,
-                    from:"no-reply@instaweb.com",
+                    from:"srbhmsk@gmail.com",
                     subject:"Account Created !",
-                    html:`<h1>welcome to instagram</h1>
-                    <p> This is the instagram clone created by Saurabh Maske</p>`
+                    html:`<h1>welcome to instaweb</h1>
+                    <p> This is the  clone created by Saurabh Maske</p>`
                     
 
                 })
@@ -108,7 +108,7 @@ router.post('/reset-password',(req,res)=>{
              user.save().then((result)=>{
                  transporter.sendMail({
                      to:user.email,
-                     from:"no-replay@instaweb.com",
+                     from:"srbhmsk@gmail.com",
                      subject:"password reset",
                      html:`
                      <p>You requested for password reset</p>

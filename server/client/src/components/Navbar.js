@@ -15,11 +15,11 @@ const NavBar = ()=>{
        if(state){
            return [
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
-            <li key="2"><Link to="/profile">Profile</Link></li>,
+            <li key="2"><Link to="/profile">My Profile</Link></li>,
             <li key="3"><Link to="/create">Create Post</Link></li>,
             <li key="4"><Link to="/myfollowingpost">My following Posts</Link></li>,
             <li  key="5">
-             <button className="btn #c62828 red darken-3"
+             <button className="btn #c62828 red darken-3" 
             onClick={()=>{
               localStorage.clear()
               dispatch({type:"CLEAR"})
@@ -34,8 +34,8 @@ const NavBar = ()=>{
            ]
        }else{
          return [
-          <li  key="6"><Link to="/signin">Signin</Link></li>,
-          <li  key="7"><Link to="/signup">Signup</Link></li>
+          <li  key="6"><Link to="/signin"><i class="fa fa-sign-in" aria-hidden="true"></i></Link></li>,
+          <li  key="7"><Link to="/signup"><i class="fa fa-user-plus" aria-hidden="true"></i></Link></li>
          
          ]
        }
@@ -60,7 +60,7 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper white">
-          <Link to={state?"/":"/signin"} className="brand-logo left">Instagram</Link>
+          <Link to={state?"/":"/signin"} className="brand-logo left"><i class="fa fa-instagram" aria-hidden="true" style={{marginLeft:"5px"}}></i> | Instaweb</Link>
           <ul id="nav-mobile" className="right">
              {renderList()}
   
