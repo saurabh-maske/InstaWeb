@@ -91,7 +91,7 @@ const SignIn  = ()=>{
             onChange={(e)=>setPasword(e.target.value)}
             />
             <div className="file-field input-field">
-            <div className="btn #64b5f6 blue darken-1">
+            <div className="btn #64b5f6 blue darken-1" style={{borderRadius:"10px"}}>
                 <span>Upload pic</span>
                 <input type="file" onChange={(e)=>setImage(e.target.files[0])} />
             </div>
@@ -99,10 +99,10 @@ const SignIn  = ()=>{
                 <input className="file-path validate" type="text" />
             </div>
             </div>
-            <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
+            <button className="btn waves-effect waves-light #64b5f6 blue darken-1" style={{borderRadius:"10px"}}
             onClick={()=>PostData()}
             >
-                SignUP
+                Signup
             </button>
             <h5>
                 <Link to="/signin">Already have an account ?</Link>
