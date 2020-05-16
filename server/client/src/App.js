@@ -68,8 +68,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routing />
-      
-    </BrowserRouter>
+      </BrowserRouter>
     </UserContext.Provider>
   );
 }
