@@ -33,8 +33,15 @@ const SignIn  = ()=>{
     const uploadFields = ()=>{
         if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
             M.toast({html: "invalid email",classes:"#c62828 red darken-3"})
-            return
         }
+         else if(!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(password)){
+                M.toast({html: "password length shoul be grater than 6 and should contain atleast one number and one special character ",classes:"#c62828 red darken-3"})
+            return;
+            }
+        
+        
+        
+  
         fetch("/signup",{
             method:"post",
             headers:{
@@ -118,4 +125,4 @@ const SignIn  = ()=>{
 }
 
 
-export default SignIn
+export default SignIn;

@@ -58,7 +58,6 @@ const NavBar = ()=>{
         })
      }
     return(
-      <div className="navbar-fixed">
         <nav>
         <div className="nav-wrapper white">
           <Link to={state?"/":"/signin"} className="brand-logo left"><i class="fa fa-instagram" aria-hidden="true" style={{marginLeft:"5px"}}></i> | Instaweb</Link>
@@ -90,7 +89,6 @@ const NavBar = ()=>{
           </div>
         </div>
       </nav>
-      </div>
     )
 }
 
