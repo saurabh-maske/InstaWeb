@@ -62,7 +62,7 @@ router.post('/signup',(req,res)=>{
   })
 })
 
-
+// signi route for user
 router.post('/signin',(req,res)=>{
     const {email,password} = req.body
     if(!email || !password){
