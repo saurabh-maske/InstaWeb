@@ -13,8 +13,8 @@ Run Client - `npm start`
  `project is running on http://localhost:3000`
  
  `Demo Credentials`
- email- connect@gmail.com
- passsword- Connect@123
+` email- saurabhmaske1997@gmail.com`
+` passsword- Saurabh@1997`
  
  ## Components
  - Home
