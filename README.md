@@ -12,6 +12,10 @@ Run Server- ` node app.js` node server runing on `http://localhost:5000`
 Run Client - `npm start`
  `project is running on http://localhost:3000`
  
+ `Demo Credentials`
+ email- connect@gmail.com
+ passsword- Connect@123
+ 
  ## Components
  - Home
  - Singin 
